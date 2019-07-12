@@ -9,6 +9,28 @@
     <body>
         <h1>Processing project by Antonio</h1>
         <script type="text/processing">
+void setup(){
+size ( 600, 600);
+background (242, 120, 27);
+smooth();
+noStroke();
+}
+
+void draw (){
+if(frameCount % 10 ==0){
+  fill (frameCount * 3 % 255, frameCount * 5 % 255, frameCount * 7 % 255);
+  pushMatrix();
+  translate (300, 300);
+  rotate(radians(frameCount * 0.2 % 360));
+  ellipse(0, 0, 70, 20);
+  fill(23,93,19);
+  rect(50, 0, 70, 3);
+  popMatrix();
+}
+
+
+
+}
 
             // Write your project here
             
